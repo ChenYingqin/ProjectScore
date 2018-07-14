@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified">
+	<xs:element name="class">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="总成绩评分权重"/>
+				<xs:element ref="自评互评教师评综合权重"/>
+				<xs:element ref="贡献度评分权重"/>
+				<xs:element ref="文档评分表前三列"/>
+				<xs:element ref="小组集合"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="总成绩评分权重">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="小组文档分" type="xs:string"/>
+				<xs:element name="个人小结分" type="xs:string"/>
+				<xs:element name="个人管理分" type="xs:string"/>
+				<xs:element name="个人贡献分" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="自评互评教师评综合权重">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="期中考核">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="权重" type="xs:string"/>
+							<xs:element name="自评互评">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="权重" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="教师评分">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="权重" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="项目验收">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="权重" type="xs:string"/>
+							<xs:element name="自评互评">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="权重" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="教师评分">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="权重" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="贡献度评分权重">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="计划设计阶段" type="xs:string"/>
+				<xs:element name="编码测试阶段" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="文档评分表前三列">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="总评分项1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="序号" type="xs:string"/>
+							<xs:element name="评分指标" type="xs:string"/>
+							<xs:element name="权重" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="评分模块集合1">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="评分模块1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="评分模块1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="评分模块内容1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="序号" type="xs:string"/>
+							<xs:element name="评分指标" type="xs:string"/>
+							<xs:element name="权重" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="评分项集合1">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="评分项1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="评分项1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="序号" type="xs:string"/>
+				<xs:element name="评分指标" type="xs:string"/>
+				<xs:element name="权重" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="小组集合">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="小组模板">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="小组"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="小组实例">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="小组"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="小组">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="小组信息"/>
+				<xs:element ref="小组成员"/>
+				<xs:element ref="小组成绩表"/>
+				<xs:element ref="文档评分表后三列"/>
+				<xs:element ref="小组贡献表"/>
+				<xs:element ref="自评互评教师评综合成绩"/>		
+				<xs:element name="总评与建议" type="xs:string"/>	
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="小组信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="分组号" type="xs:string"/>
+				<xs:element name="项目名称" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="小组成员">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="成员信息"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="成员信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="学号" type="xs:string"/>
+				<xs:element name="姓名" type="xs:string"/>
+				<xs:element name="分工" type="xs:string"/>
+				<xs:element name="电话" type="xs:string"/>
+				<xs:element name="email" type="xs:string"/>
+				<xs:element name="序号" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="小组成绩表">		
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="成员成绩"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="成员成绩">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="小组文档分" type="xs:string"/>
+				<xs:element name="个人小结分" type="xs:string"/>
+				<xs:element name="个人管理分" type="xs:string"/>
+				<xs:element name="个人贡献分" type="xs:string"/>
+				<xs:element name="总评" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="文档评分表后三列">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="总评分项2">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="得分" type="xs:string"/>
+							<xs:element name="加权分" type="xs:string"/>
+							<xs:element name="备注" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="评分模块集合2">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="评分模块2"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="评分模块2">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="评分模块内容2">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="得分" type="xs:string"/>
+							<xs:element name="加权分" type="xs:string"/>
+							<xs:element name="备注" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="评分项集合2">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="评分项2"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="评分项2">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="得分" type="xs:string"/>
+				<xs:element name="加权分" type="xs:string"/>
+				<xs:element name="备注" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="小组贡献表">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="计划设计阶段">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="成员贡献">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="贡献分" type="xs:string"/>
+										<xs:element name="主要贡献" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="编码测试阶段">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="成员贡献">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="贡献分" type="xs:string"/>
+										<xs:element name="主要贡献" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="自评互评教师评综合成绩">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="期中考核">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="自评互评表">
+								<xs:complexType>
+									<xs:sequence maxOccurs="unbounded">
+										<xs:element name="小组">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="组号" type="xs:string"/>
+													<xs:element name="报告人" type="xs:string"/>
+													<xs:element name="软件计划" type="xs:string"/>
+													<xs:element name="需求分析" type="xs:string"/>
+													<xs:element name="软件设计" type="xs:string"/>
+													<xs:element name="报告陈述" type="xs:string"/>
+													<xs:element name="总分" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							  </xs:element>
+							<xs:element name="教师评分项">						
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="报告人" type="xs:string"/>
+										<xs:element name="软件计划" type="xs:string"/>
+										<xs:element name="需求分析" type="xs:string"/>
+										<xs:element name="软件设计" type="xs:string"/>
+										<xs:element name="报告陈述" type="xs:string"/>
+										<xs:element name="总分" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>								
+						  </xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="项目验收">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="自评互评表">
+								<xs:complexType>
+									<xs:sequence maxOccurs="unbounded">
+										<xs:element name="小组">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="组号" type="xs:string"/>
+													<xs:element name="报告人" type="xs:string"/>
+													<xs:element name="编码实现" type="xs:string"/>
+													<xs:element name="软件测试" type="xs:string"/>
+													<xs:element name="用户手册" type="xs:string"/>
+													<xs:element name="报告陈述" type="xs:string"/>
+													<xs:element name="总分" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							  </xs:element>
+							<xs:element name="教师评分项">							 
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="报告人" type="xs:string"/>
+										<xs:element name="编码实现" type="xs:string"/>
+										<xs:element name="软件测试" type="xs:string"/>
+										<xs:element name="用户手册" type="xs:string"/>
+										<xs:element name="报告陈述" type="xs:string"/>
+										<xs:element name="总分" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>								
+						  </xs:element>								
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

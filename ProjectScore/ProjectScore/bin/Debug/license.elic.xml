@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Key="PgAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAis/DPIBosk5gG8HApHBCbC97RUCm29cQ27ItLpoRUMueKCP55EYO+46E+IV1wUlT2K0/v/QyML2Y7j+z4v2IyVg57qHPXyqIbbjIn7oqQe+8dLCoFd9CiUdXgLlX3xZ03xElHvshVp4Dfsg+1qGHIejhbP3m6qCHhJCxFsRLRWl8Fi9XVzFjpGchgt9WO042PdHoJJS0IdQfauqxDM8PguXNQyB1WZS1MUVYtvC+CkPW8PwWEmHR2YwToyMgY5R1l4pO9JCxJWJOAlT5B44W24WifiaM3Q//IK/mY25yTGglrgcAI5XZr1n7TXS0AKN6EKBPjLA9bsgWbE+bwyrcTnv+PQl0J2msQmY5CyiqtDU3IvI7Zf83rUnF076Lr+Op7xZj7Wgi11CLmgkBVboomA2JuoNvusojfOy66gP9fDlmUEjAO7Eg8rOsxsGVc030bpNKrKSY7/MAl/TJ9UVnXWzESG9Ov6J/fwMMPJePWaAsVBhUpRg/rZ9UKHcfo4vjqUAQMYhm33ZBqJNx1KTn4buuUDqRFaNRh+h4SUw7C08lAAzvJGs2fwriqgjnkWKOcZL6K6QzGuwTJHpkLCr95S+0/3+Pl77m/a70r2JVBMSIhodheWVMKxYDG35q9ix4It/sQAOgBkVFcIZ158PIIdjDneVzyhAxcXI/48qnj+t5658/nxeqXFzEUaIwL2vBivXWp3TqQYbONVF86CX6Z00ka1HlzAQM38NzYnkirHy7+ObBkncGx2j3oWGAMihh63XA/X3Flit5pr6NZChXfjxvke/xOB/VaIGgVVku8ipa+K+ySss8larVgfTKERHZnEKcVfVPoAag+e1FKnAL1FV2gyxnV8wEfIApet02k+83n5XSaxu0znCJwxJMaNd+TnT2DbYS9ZWgotHrhRlWcIR1UD7+12UpUv291arGhN4LZDml2qyY8UmBDbSttlw4yvl8Nh56esk8TSnzja9ahx26qARXj/az80RA0RrBBJI+eyENvMQJRm15RZKsq795L4gYbYkA0PHVM42MJrm0z0tQCVSVYNWeOqwDO85R/eMa0LEhJXqLer83BKGjnFwrqmIt9p/j2MwiEL59G1sZA0sPYslm/dEKcSaUwwqJjU37/WBzxVVjUxNgZrlsT94M6JAwkNEuyeAEEEqpIvbQoZhmTO5560sgv7aW4BPLYFKEBlthEGFQ/PSgMRgxWjQ03uUcaILExqoXQ7+jpFr/0yUykhKvVhyaop7HxDVemBFo748ZsfG+k/05X+MYnJOEhQ68bNo+FVz+rnyJvzIV3dP6sp3NtB6wijyVgprpwOdkFuhqA1xuV2UkBocA2zq8/AZxPnLIIVgkyN0hc9VIZcJLOd5UJwUarUvkjejOJlHQ==" Version="1.3">
+	<Type>Temporary</Type>
+	<Username>Wu Li</Username>
+	<Email>li.wu1@pactera.com</Email>
+	<LicensedDate>2018-01-10T00:00:00Z</LicensedDate>
+	<ExpiredDate>2018-02-10T00:00:00Z</ExpiredDate>
+	<Products>
+		<Product>
+			<Name>Spire.Doc Pro Edition</Name>
+			<Version>6.0</Version>
+			<Subscription>
+				<NumberOfPermittedDeveloper>1</NumberOfPermittedDeveloper>
+				<NumberOfPermittedSite>1</NumberOfPermittedSite>
+			</Subscription>
+		</Product>
+		<Product>
+			<Name>Spire.PDF Pro Edition</Name>
+			<Version>3.9</Version>
+			<Subscription>
+				<NumberOfPermittedDeveloper>1</NumberOfPermittedDeveloper>
+				<NumberOfPermittedSite>1</NumberOfPermittedSite>
+			</Subscription>
+		</Product>
+	</Products>
+	<Issuer>
+		<Name>e-iceblue</Name>
+		<Email>sales@e-iceblue.com</Email>
+		<Url>http://www.e-iceblue.com</Url>
+	</Issuer>
+</License>
