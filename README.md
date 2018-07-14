@@ -7,11 +7,11 @@
 
 ![1](http://github.com/ChenYingqin/ProjectScore/raw/master/images/2.png)
 
-![2](http://github.com/ChenYingqin/ProjectScore/raw/master/images/3.png)
+![2](http://github.com/ChenYingqin/ProjectScore/raw/master/images/3.0.png)
 
-![3](http://github.com/ChenYingqin/ProjectScore/raw/master/images/4.png)
+![3](http://github.com/ChenYingqin/ProjectScore/raw/master/images/4.0.png)
 
-![4](http://github.com/ChenYingqin/ProjectScore/raw/master/images/5.png)
+![4](http://github.com/ChenYingqin/ProjectScore/raw/master/images/5.0.png)
 
 ![5](http://github.com/ChenYingqin/ProjectScore/raw/master/images/6.png)
 
